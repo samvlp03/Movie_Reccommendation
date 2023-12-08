@@ -29,7 +29,7 @@ Vt_k = Vt[:k, :]
 # Reconstruct the user-item matrix with reduced dimensions
 predicted_ratings = np.dot(np.dot(U_k, sigma_k), Vt_k)
 
-# Example: Recommend movies for a user (replace 'user_id' with the actual user ID)
+# Example: Recommend movies for a user 
 user_id = 5
 user_movies = merged_data[merged_data['user_id'] == user_id]['item_id'].unique()
 
